@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+<h1 style='color: red;'>{{ article.title }}</h1>
+<label>Posted on <strong>{{ article.date }}</strong></label>
+{{ article.content }}
+{% endblock %}
